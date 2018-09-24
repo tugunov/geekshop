@@ -1,0 +1,210 @@
+.container {
+    background-color: #f8f8f8;
+    width: 700px;
+    margin: 0 auto;
+    /*    margin: 0;*/
+}
+
+header {
+    color: navy;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+
+    background-image: url(images/header_sky.jpg);
+    background-blend-mode: saturation;
+
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    padding-left: 20px;
+
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    width: 100px;
+    height: 45px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a:hover {
+    color: red;
+}
+
+/*Страница товара*/
+
+.product h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+
+.short_description p,
+.short_description ul {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+
+
+.long_description p,
+.long_description ul {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+.charact ul {
+    font-family: sans-serif;
+    list-style-image: url(images/defmix_1157.png);
+    font-size: 14px;
+
+}
+
+.short_description{
+    height: auto;
+
+
+}
+
+.short_description img{
+    width: 200px;
+    float:left;
+    margin: 10px;
+}
+
+.short_description button:hover{
+    background-color: aquamarine;
+}
+
+.short_description button:active{
+    background-color: red;
+}
+
+
+
+input {
+    width: 300px;
+    height: 20px;
+}
+
+textarea {
+    width: 60%;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 2px;
+    
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/*5b - стили для текста внутри полей input*/
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: darkblue;
+}
+
+input[type="email"]:focus {
+    color: aqua;
+    background-color: azure;
+}
+
+input[type="text"] {
+    text-transform: capitalize;
+}
+
+table {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #000;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align: center;
+}
+
+/*Страница каталога*/
+.catalog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.catalog_item{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.catalog_item img{
+    height:100px;
+    width: 100px;
+    display:flex;
+}
+
+.map {
+
+    height: 374px;
+    display: flex;
+}
+
+footer {
+    border-top: 1px solid black;
+    height: 50px;
+    background-color: azure;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.footertext {
+    display: flex;
+    padding-right: 5px;
+    padding-top: 5px;
+}
